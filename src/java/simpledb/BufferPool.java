@@ -1,6 +1,7 @@
 package simpledb;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -127,6 +128,12 @@ public class BufferPool {
         throws DbException, IOException, TransactionAbortedException {
         // some code goes here
         // not necessary for proj1
+        DbFile dbFile = Database.getCatalog().getDbFile(tableId);
+        ArrayList<Page> newPages = dbFile.insertTuple(tid, t);
+        for (Page page : newPages) {
+            page.markDirty(true, tid);
+            this.pageMap.put(page.getId(), page);
+        }
     }
 
     /**
@@ -146,6 +153,10 @@ public class BufferPool {
         throws DbException, TransactionAbortedException {
         // some code goes here
         // not necessary for proj1
+        int tableId = t.getRecordId().getPageId().getTableId();
+        DbFile dbFile = Database.getCatalog().getDbFile(tableId);
+        Page modifiedPage = dbFile.deleteTuple(tid, t);
+        modifiedPage.markDirty(true, tid);
     }
 
     /**
