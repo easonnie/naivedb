@@ -287,16 +287,16 @@
             </fileset>
             <report todir="${test.reports}" />
         </junitreport>
-        
+
         <!-- Fail here if the junit tests failed. -->
         <fail if="junit.failed" message="Some JUnit tests failed"/>
     </target>
-    
+
     <target name="handin" depends="clean"
         description="Create a tarball of your code to hand in">
-        <tar destfile="CS186-proj2.tar.gz" compression="gzip"
+        <tar destfile="MPCS53003-proj2.tar.gz" compression="gzip"
             basedir="." />
-        <echo message="Tarball created!  Please submit 'CS186-proj2.tar.gz' per the instructions in the project document." />
+        <echo message="Tarball created!  Please submit 'MPCS53003-proj2.tar.gz' per the instructions in the project document." />
     <subant target="dist">
         <fileset dir="." includes="build.xml"/>
     </subant>
