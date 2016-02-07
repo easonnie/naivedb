@@ -125,7 +125,7 @@ public class HeapFile implements DbFile {
         // some code goes here
         Page insertPage = null;
         ArrayList<Page> pages = new ArrayList<Page>();
-
+        
         for (int i = 0; i < this.numPages(); i++) {
 
             HeapPageId pid = new HeapPageId(this.getId(), i);
@@ -141,7 +141,7 @@ public class HeapFile implements DbFile {
             HeapPageId pid = new HeapPageId(this.getId(), this.numPages());
             HeapPage heapPage = new HeapPage(pid, HeapPage.createEmptyPageData());
             heapPage.insertTuple(t);
-            this.writePage(heapPage);
+            //this.writePage(heapPage);
             pages.add(heapPage);
         } else {
             ((HeapPage)insertPage).insertTuple(t);
