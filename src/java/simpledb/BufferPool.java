@@ -224,6 +224,18 @@ public class BufferPool {
     private synchronized  void evictPage() throws DbException {
         // some code goes here
         // not necessary for proj1
+        Long oldestTime = Long.MAX_VALUE;
+        PageId LRUPageId = null;
+        for (PageId pageId : lastUsedTimeMap.keySet()) {
+            Long time = lastUsedTimeMap.get(pageId);
+            if (time < oldestTime) {
+                oldestTime = time;
+                LRUPageId = pageId;
+            }
+        }
+
+        pageMap.remove(LRUPageId);
+        lastUsedTimeMap.remove(LRUPageId);
     }
 
 //    class HeapNode implements Comparable<HeapNode> {
