@@ -124,7 +124,6 @@ public class Join extends Operator {
 
                 if (p.filter(tuple1, tuple2)) {
                     curJoinedTuple.offer(Tuple.merge(tuple1, tuple2));  //problem may occur when tuple2 is very large.
-                    //Tuple.merge(tuple1, tuple2);
                 }
             }
 
