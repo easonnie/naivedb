@@ -80,6 +80,7 @@ public class HeapFile implements DbFile {
             accessor.seek(offset);
             accessor.read(pageData, 0, BufferPool.PAGE_SIZE);
             page = new HeapPage((HeapPageId) pid, pageData);
+            accessor.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -175,7 +176,7 @@ public class HeapFile implements DbFile {
     }
 }
 
-class HeapFileIterator implements DbFileIterator {
+/*class HeapFileIterator implements DbFileIterator {
 
     private HeapFile f;
     Iterator<Tuple> curIterator;    //curIterator of some page
@@ -242,11 +243,12 @@ class HeapFileIterator implements DbFileIterator {
         //System.out.println("f.numPages:" + f.numPages());
         //System.out.println("curPageNum:" + curPageNum);
         if (curPageNum >= f.numPages() - 1) {
-            throw new DbException("Page Num out of bound.");
+//            throw new DbException("Page Num out of bound.");
+            return null;
         }
         HeapPageId curPageId = new HeapPageId(f.getId(), ++curPageNum);
         HeapPage curPage = (HeapPage) Database.getBufferPool().getPage(tid, curPageId, Permissions.READ_ONLY);
         return curPage.iterator();
     }
-}
+}*/
 

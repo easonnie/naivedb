@@ -215,11 +215,54 @@ public class JoinOptimizer {
         // See the project writeup for some hints as to how this function
         // should work.
 
-        // some code goes here
-        //Replace the following
-        return joins;
-    }
+//        1. j = set of join nodes
+//        2. for (i in 1...|j|):  // First find best plan for single join, then for two joins, etc.
+//        3.     for s in {all length i subsets of j} // Looking at a concrete subset of joins
+//        4.       bestPlan = {}  // We want to find the best plan for this concrete subset
+//        5.       for s' in {all length i-1 subsets of s}
+//        6.            subplan = optjoin(s')  // Look-up in the cache the best query plan for s but with one relation missing
+//        7.            plan = best way to join (s-s') to subplan // Now find the best plan to extend s' by one join to get s
+//        8.            if (cost(plan) < cost(bestPlan))
+//            9.               bestPlan = plan // Update the best plan for computing s
+//        10.      optjoin(s) = bestPlan
+//        11. return optjoin(j)
 
+        // some code goes here
+        PlanCache optPlanCache = new PlanCache();
+        Set<LogicalJoinNode> joinNodeSet = new HashSet<LogicalJoinNode>(joins);
+
+        // corner case: no join
+        if (joins.size() == 0) {
+            Vector<LogicalJoinNode> optJoinOrder = new Vector<LogicalJoinNode>();
+            return optJoinOrder;
+        }
+
+        // dynamic programming, bottom up
+        for (int i = 1; i <= joinNodeSet.size(); i++) {
+            Set<Set<LogicalJoinNode>> subsets = enumerateSubsets(joins, i);
+            // find best join order for a given subset
+            for (Set<LogicalJoinNode> joinSet : subsets) {
+                CostCard bestPlanCostCard = new CostCard();
+                bestPlanCostCard.cost = Double.MAX_VALUE;
+                for (LogicalJoinNode joinToRemove : joinSet) {
+                    CostCard planCostCard = computeCostAndCardOfSubplan(stats, filterSelectivities, joinToRemove, joinSet, bestPlanCostCard.cost, optPlanCache);
+                    if (planCostCard != null && planCostCard.cost < bestPlanCostCard.cost) {
+                        bestPlanCostCard = planCostCard;
+                    }
+                }
+                optPlanCache.addPlan(joinSet, bestPlanCostCard.cost, bestPlanCostCard.card, bestPlanCostCard.plan);
+            }
+        }
+
+        Vector<LogicalJoinNode> optJoinOrder = optPlanCache.getOrder(joinNodeSet);
+
+        // explain the join plan
+        if (explain) {
+            printJoins(optJoinOrder, optPlanCache, stats, filterSelectivities);
+        }
+
+        return optJoinOrder;
+    }
     // ===================== Private Methods =================================
 
     /**

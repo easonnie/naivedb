@@ -1,0 +1,43 @@
+//==========================================
+//              Instructions
+//==========================================
+1. unpack sample-0.001.tar.bz2 into imdb/0.001
+2. in terminal: java -classpath "bin/src/:lib/*" simpledb.Parser imdb/0.001/imdb.schema -explain
+3. simpleDB> select d.fname, d.lname from Actor a, Casts c, Movie_Director m, Director d where a.id=c.pid and c.mid=m.mid and m.did=d.id  and a.fname='John' and a.lname='Spicer';
+
+//==========================================
+//              Cost Estimate
+//==========================================
+Join m:d (Cost =9599404.0, card = 278)
+    Join c:m (Cost =4241232.0, card = 278)
+        Join a:c (Cost =397008.0, card = 3008)
+            a (Cost = 290000.0, card = 1)
+            c (Cost = 104000.0, card = 3008)
+        m (Cost = 1000.0, card = 278)
+    d (Cost = 19000.0, card = 274)
+
+//==========================================
+//          Chosen query plan
+//==========================================
+                                                 π(d.fname,d.lname),card:278
+                                                 |
+                                                 ⨝(m.did=d.id),card:278
+                              ___________________|____________________
+                              |                                      |
+                              ⨝(c.mid=m.mid),card:278                |
+                ______________|_______________                       |
+                |                            |                       |
+                ⨝(a.id=c.pid),card:3008      |                       |
+  ______________|______________              |                       |
+  |                           |              |                       |
+  σ(a.lname=Spicer),card:1    |              |                       |
+  |                           |              |                       |
+  σ(a.fname=John),card:1      |              |                       |
+  |                           |            scan(Movie_Director m)    |
+scan(Actor a)               scan(Casts c)                          scan(Director d)
+
+d.fname	d.lname
+------------------------
+Chris	Malazdrewicz
+Thomas	Parkinson
+Alain	Zaloum
