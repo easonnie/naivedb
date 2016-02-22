@@ -8,13 +8,22 @@
 //==========================================
 //              Cost Estimate
 //==========================================
+a (Cost = 290000.0, card = 1)
+c (Cost = 104000.0, card = 3008)
+m (Cost = 1000.0, card = 278)
+d (Cost = 19000.0, card = 274)
+
 Join m:d (Cost =9599404.0, card = 278)
-    Join c:m (Cost =4241232.0, card = 278)
-        Join a:c (Cost =397008.0, card = 3008)
-            a (Cost = 290000.0, card = 1)
-            c (Cost = 104000.0, card = 3008)
-        m (Cost = 1000.0, card = 278)
-    d (Cost = 19000.0, card = 274)
+Join c:m (Cost =4241232.0, card = 278)
+Join a:c (Cost =397008.0, card = 3008)
+as Join a:c has the lowest cost, we first join a:c
+
+Join a:c with m:d (Cost = 1.7976931348623157E308, card = 0)
+Join a:c with c:m (Cost = 4241232.0, card = 278)
+Join c:m with m:d (Cost = 2.9689364E7, card = 274)
+as Join a:c with c:m has the lowest cost, we then join a:c and c:m
+
+lastly we join m:d
 
 //==========================================
 //          Chosen query plan
@@ -41,3 +50,81 @@ d.fname	d.lname
 Chris	Malazdrewicz
 Thomas	Parkinson
 Alain	Zaloum
+
+3 rows.
+
+//==========================================
+//              Instructions
+//==========================================
+select a.fname, a.lname from Actor a, Casts c, Movie_Director m, Director d where a.id=c.pid and c.mid=m.mid and m.did=d.id and d.fname='Thomas' and d.lname='Parkinson';
+
+//==========================================
+//              Cost Estimate
+//==========================================
+d (Cost = 19000.0, card = 1)
+m (Cost = 1000.0, card = 278)
+c (Cost = 104000.0, card = 3008)
+a (Cost = 290000.0, card = 2898)
+
+Join c:a (Cost =420184.0, card = 2898)
+Join m:c (Cost =127286.0, card = 1)
+Join d:m (Cost =20278.0, card = 1)
+as join d:m has the lowest cose, we first join d:m
+
+Join a:c with m:d (Cost = 1.7976931348623157E308, card = 0)
+Join a:c with c:m (Cost = 3.14243408E8, card = 278)
+Join c:m with m:d (Cost = 127286.0, card = 1)
+as join c:m with m:d has the lowest cost, we them join c:m
+
+lastly we join a:c
+
+//==========================================
+//          Chosen query plan
+//==========================================                                                      π(a.fname,a.lname),card:3008
+                                                      |
+                                                      ⨝(c.pid=a.id),card:3008
+                                     _________________|__________________
+                                     |                                  |
+                                     ⨝(m.mid=c.mid),card:3008           |
+                 ____________________|____________________              |
+                 |                                       |              |
+                 ⨝(d.id=m.did),card:278                  |              |
+  _______________|________________                       |              |
+  |                              |                       |              |
+  σ(d.lname=Parkinson),card:1    |                       |              |
+  |                              |                       |              |
+  σ(d.fname=Thomas),card:1       |                       |              |
+  |                              |                     scan(Casts c)    |
+scan(Director d)               scan(Movie_Director m)                 scan(Actor a)
+
+a.fname	a.lname
+------------------------
+Michael	Burns
+Patty	Carderelli
+Norman	Fell
+Eric	Foskett
+Reg	Hanson
+Sylvain	Lamontagne
+Christopher B.	MacCabe
+Pantazidis	Panagiotis
+Ray	Roth
+Mark	Ruel
+Frank	Schorpion
+Robert	Scott
+John	Spicer
+Cal	Strathmann
+Martin	Surette
+Bill	Torrie
+Johnny	Usry
+Al	Vandecruys
+Russell J.	Yvan
+Rachel	Bruneau
+Carolyn	Davine
+Deirdre	Fitzsimons
+Nathalie	Gauthier
+Beth	Lachance
+Maxine	Messer
+Suzanne	Verdall
+Dawna	Wightman
+
+ 27 rows.

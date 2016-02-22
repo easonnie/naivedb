@@ -2,71 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d199cfe-b82a-4323-b9df-9bb7d92321e2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.001/Actor.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.001/Casts.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.001/Director.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.001/Genre.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.001/Movie.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.001/Movie_Director.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.01/Actor.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.01/Casts.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.01/Director.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.01/Genre.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.01/Movie.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.01/Movie_Director.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.1/Actor.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.1/Casts.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.1/Director.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.1/Genre.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.1/Movie.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.1/Movie_Director.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Excercise 6 - Query Plans" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.001/imdb.schema" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.01/imdb.schema" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imdb/0.1/imdb.schema" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/simpledb/HeapFileIterator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/simpledb/systemtest/QueryTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/AggregateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/CatalogTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/FilterTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapFileReadTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapFileWriteTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageIdTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageReadTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageWriteTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/InsertTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/IntegerAggregatorTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/JoinPredicateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/JoinTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/PredicateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/RecordIdTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/StringAggregatorTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$CreateHeapFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$LockGrabber.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$MockScan.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$SkeletonFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleDescTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/AggregateTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/AggregateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/DeleteTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/EvictionTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/FilterBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/FilterTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/InsertTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/JoinTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/ScanTest$1InstrumentedHeapFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/ScanTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/SimpleDbTestBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/SystemTestUtil.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/AggregateTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/AggregateTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/CatalogTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/CatalogTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/FilterTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/FilterTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapFileReadTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/HeapFileReadTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapFileWriteTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/HeapFileWriteTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageIdTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/HeapPageIdTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageReadTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/HeapPageReadTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageWriteTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/HeapPageWriteTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/InsertTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/InsertTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/IntegerAggregatorTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/IntegerAggregatorTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/JoinPredicateTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/JoinPredicateTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/JoinTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/JoinTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/PredicateTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/PredicateTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/RecordIdTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/RecordIdTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/StringAggregatorTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/StringAggregatorTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$CreateHeapFile.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$CreateHeapFile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$LockGrabber.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$LockGrabber.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$MockScan.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$MockScan.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$SkeletonFile.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$SkeletonFile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TestUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleDescTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TupleDescTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TupleTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/AggregateTest$1.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/AggregateTest$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/AggregateTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/AggregateTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/DeleteTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/DeleteTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/EvictionTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/EvictionTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/FilterBase.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/FilterBase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/FilterTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/FilterTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/InsertTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/InsertTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/JoinTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/JoinTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/ScanTest$1InstrumentedHeapFile.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/ScanTest$1InstrumentedHeapFile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/ScanTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/ScanTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/SimpleDbTestBase.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/SimpleDbTestBase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/SystemTestUtil.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/SystemTestUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Excercise 6 - Query Plans" afterPath="$PROJECT_DIR$/Excercise 6 - Query Plans" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log" afterPath="$PROJECT_DIR$/log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/HeapFile.java" afterPath="$PROJECT_DIR$/src/java/simpledb/HeapFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/JoinOptimizer.java" afterPath="$PROJECT_DIR$/src/java/simpledb/JoinOptimizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/Parser.java" afterPath="$PROJECT_DIR$/src/java/simpledb/Parser.java" />
     </list>
     <ignored path="simpledb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,10 +61,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TableStats.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TableStats.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/simpledb/TableStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
+            <state vertical-scroll-proportion="0.0">
               <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
               <folding>
                 <element signature="e#556#557#0" expanded="true" />
@@ -106,15 +78,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JoinOptimizer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JoinOptimizer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/simpledb/JoinOptimizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.10045662">
+              <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
               <folding>
                 <element signature="e#9529#9546#0" expanded="true" />
                 <element signature="e#9682#9699#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringAggregatorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/simpledb/StringAggregatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,6 +111,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Nengbao" />
+      </list>
+    </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="FORCE_PUSH_ALLOWED" value="true" />
@@ -473,135 +460,8 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="JUnit.StringAggregatorTest">
-    <configuration default="false" name="JoinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="simpledb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="simpledb" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="simpledb" />
-      <option name="MAIN_CLASS_NAME" value="simpledb.JoinTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="JoinTest.gtJoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="simpledb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="simpledb" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="simpledb" />
-      <option name="MAIN_CLASS_NAME" value="simpledb.JoinTest" />
-      <option name="METHOD_NAME" value="gtJoin" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="JoinTest.eqJoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="simpledb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="simpledb" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="simpledb" />
-      <option name="MAIN_CLASS_NAME" value="simpledb.JoinTest" />
-      <option name="METHOD_NAME" value="eqJoin" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="IntegerAggregatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="simpledb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="simpledb" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="simpledb" />
-      <option name="MAIN_CLASS_NAME" value="simpledb.IntegerAggregatorTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="StringAggregatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="simpledb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="simpledb" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="simpledb" />
-      <option name="MAIN_CLASS_NAME" value="simpledb.StringAggregatorTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+  <component name="RunManager" selected="Application.Parser">
+    <configuration default="true" type="AntRunConfiguration" factoryName="Ant Target">
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -614,16 +474,16 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="simpledb.Parser" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="imdb/0.001/imdb.schema -explain" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
+      <module name="simpledb" />
       <envs />
       <method />
     </configuration>
@@ -798,22 +658,24 @@
       <envs />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.JoinTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.JoinTest.gtJoin" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.JoinTest.eqJoin" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.IntegerAggregatorTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.StringAggregatorTest" />
+    <configuration default="false" name="Parser" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="simpledb.Parser" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="imdb/0.001/imdb.schema -explain" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="simpledb" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.Parser" />
     </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.StringAggregatorTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.IntegerAggregatorTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.JoinTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.JoinTest.eqJoin" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.JoinTest.gtJoin" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -851,20 +713,18 @@
       <workItem from="1454620089968" duration="14010000" />
       <workItem from="1454706668409" duration="206000" />
       <workItem from="1454707300679" duration="2853000" />
-      <workItem from="1456001835824" duration="17311000" />
+      <workItem from="1456001835824" duration="20810000" />
     </task>
+    <task id="LOCAL-00001" summary="Complete Project 3 - Exercise 5 - Join Ordering and all tests passed">
+      <created>1456097714870</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1456097714870</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IntegerAggregatorTest - 2016.02.04 at 18h 43m 49s.xml">
-      <configuration name="IntegerAggregatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IntegerAggregatorTest - 2016.02.04 at 18h 44m 02s.xml">
-      <configuration name="IntegerAggregatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IntegerAggregatorTest - 2016.02.04 at 18h 44m 57s.xml">
-      <configuration name="IntegerAggregatorTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="IntegerAggregatorTest - 2016.02.04 at 18h 45m 08s.xml">
       <configuration name="IntegerAggregatorTest" configurationId="JUnit" />
     </history-entry>
@@ -886,9 +746,18 @@
     <history-entry file="StringAggregatorTest - 2016.02.04 at 19h 01m 16s.xml">
       <configuration name="StringAggregatorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StringAggregatorTest - 2016.02.21 at 19h 22m 12s.xml">
+      <configuration name="StringAggregatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringAggregatorTest - 2016.02.21 at 19h 23m 29s.xml">
+      <configuration name="StringAggregatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringAggregatorTest - 2016.02.21 at 19h 24m 01s.xml">
+      <configuration name="StringAggregatorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77094000" />
+    <option name="totallyTimeSpent" value="80593000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -901,24 +770,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="23" width="1229" height="777" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36787564" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27046633" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36642337" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.270073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24936816" sideWeight="0.48759124" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24936816" sideWeight="0.48759124" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24936816" sideWeight="0.51240873" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24936816" sideWeight="0.5065502" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6671533" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -965,6 +834,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Complete Project 3 - Exercise 5 - Join Ordering and all tests passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete Project 3 - Exercise 5 - Join Ordering and all tests passed" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -986,8 +859,14 @@
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java/simpledb/JoinOptimizer.java</url>
+          <line>240</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1193,13 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/simpledb/StringAggregatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68041235">
-          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/simpledb/StringAggregator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.0">
@@ -1378,20 +1250,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/JoinOptimizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
-          <folding>
-            <element signature="e#9529#9546#0" expanded="true" />
-            <element signature="e#9682#9699#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/simpledb/TableStats.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
+        <state vertical-scroll-proportion="0.0">
           <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
           <folding>
             <element signature="e#556#557#0" expanded="true" />
@@ -1400,6 +1261,25 @@
             <element signature="e#724#725#0" expanded="true" />
             <element signature="e#1371#1372#0" expanded="true" />
             <element signature="e#1402#1403#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/simpledb/StringAggregatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/JoinOptimizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10045662">
+          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+          <folding>
+            <element signature="e#9529#9546#0" expanded="true" />
+            <element signature="e#9682#9699#0" expanded="true" />
           </folding>
         </state>
       </provider>
