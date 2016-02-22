@@ -1,0 +1,197 @@
+//==========================================
+//          Partners
+//==========================================
+Yixin Nie: Exercise 1, 2, 3, 4
+Nengbao Liu: Exercise 1, 5, 6
+
+//==========================================
+// Exercise 1: Life of a query in SimpleDB
+//==========================================
+Step 1: simpledb.Parser.main() and simpledb.Parser.start()
+    simpledb.Parser.main() is the entry point for the SimpleDB system.
+    It calls simpledb.Parser.start(). The latter performs three main actions:
+    -   It populates the SimpleDB catalog from the catalog text file provided
+        by the user as argument (Database.getCatalog().loadSchema(argv[0]);).
+    -   For each table defined in the system catalog, it computes statistics over
+        the data in the table by calling: TableStats.computeStatistics(),
+        which then does: TableStats s = new TableStats(tableid, IOCOSTPERPAGE);
+    -   It processes the statements submitted by the user
+        (processNextStatement(new ByteArrayInputStream(statementBytes));)
+
+Step 2: simpledb.Parser.processNextStatement()
+    This method takes two key actions:
+    -   First, it gets a physical plan for the query by invoking handleQueryStatement((ZQuery)s);
+    -   Then it executes the query by calling query.execute();
+
+Step 3: simpledb.Parser.handleQueryStatement()
+    -   A logical plan is derived through parseQueryLogicalPlan()
+    -   A physical plan is derived based on the logical plan by calling physicalPlan() and print it out
+
+Step 4: simpledb.Parser.parseQueryLogicalPlan()
+    -   get all the tables and add for later scanning
+    -   parse the WHERE clause, creating Filter and Join nodes by calling processExpression()
+    -   parse the GROUP BY clause, getting the group by field value
+    -   parse the SELECT clause, pick out aggregates and check for query validity
+    -   parse the ORDER BY clause, add to the logical plan
+    -   return the logical plan
+
+Step 5: simpledb.LogicalPlan.physicalPlan()
+    Convert this LogicalPlan into a physicalPlan represented by a DbIterator.
+    Attempts to find the optimal plan by using JoinOptimizer.orderJoins() to order the joins in the plan.
+    -   create a SeqScan() for each table
+    -   create Filter
+    -   create a JoinOptimizer and find the optimal plan to order joins
+    -   walk the select list, to determine order in which to project output fields
+    -   create Aggregate and OrderBy if they exists
+
+
+
+//==========================================
+//         Exercise 6: Query Plans
+//==========================================
+//==========================================
+//              Instructions
+//==========================================
+1. unpack sample-0.001.tar.bz2 into imdb/0.001
+2. in terminal: java -classpath "bin/src/:lib/*" simpledb.Parser imdb/0.001/imdb.schema -explain
+3. simpleDB> select d.fname, d.lname from Actor a, Casts c, Movie_Director m, Director d where a.id=c.pid and c.mid=m.mid and m.did=d.id  and a.fname='John' and a.lname='Spicer';
+
+//==========================================
+//              Cost Estimate
+//==========================================
+a (Cost = 290000.0, card = 1)
+c (Cost = 104000.0, card = 3008)
+m (Cost = 1000.0, card = 278)
+d (Cost = 19000.0, card = 274)
+
+Join m:d (Cost =9599404.0, card = 278)
+Join c:m (Cost =4241232.0, card = 278)
+Join a:c (Cost =397008.0, card = 3008)
+as Join a:c has the lowest cost, we first join a:c
+
+Join a:c with m:d (Cost = 1.7976931348623157E308, card = 0)
+Join a:c with c:m (Cost = 4241232.0, card = 278)
+Join c:m with m:d (Cost = 2.9689364E7, card = 274)
+as Join a:c with c:m has the lowest cost, we then join a:c and c:m
+
+lastly we join m:d
+
+//==========================================
+//          Chosen query plan
+//==========================================
+                                                 π(d.fname,d.lname),card:278
+                                                 |
+                                                 ⨝(m.did=d.id),card:278
+                              ___________________|____________________
+                              |                                      |
+                              ⨝(c.mid=m.mid),card:278                |
+                ______________|_______________                       |
+                |                            |                       |
+                ⨝(a.id=c.pid),card:3008      |                       |
+  ______________|______________              |                       |
+  |                           |              |                       |
+  σ(a.lname=Spicer),card:1    |              |                       |
+  |                           |              |                       |
+  σ(a.fname=John),card:1      |              |                       |
+  |                           |            scan(Movie_Director m)    |
+scan(Actor a)               scan(Casts c)                          scan(Director d)
+
+d.fname	d.lname
+------------------------
+Chris	Malazdrewicz
+Thomas	Parkinson
+Alain	Zaloum
+
+3 rows.
+
+//==========================================
+//              Instructions
+//==========================================
+select a.fname, a.lname from Actor a, Casts c, Movie_Director m, Director d where a.id=c.pid and c.mid=m.mid and m.did=d.id and d.fname='Thomas' and d.lname='Parkinson';
+
+//==========================================
+//              Cost Estimate
+//==========================================
+d (Cost = 19000.0, card = 1)
+m (Cost = 1000.0, card = 278)
+c (Cost = 104000.0, card = 3008)
+a (Cost = 290000.0, card = 2898)
+
+Join c:a (Cost =420184.0, card = 2898)
+Join m:c (Cost =127286.0, card = 1)
+Join d:m (Cost =20278.0, card = 1)
+as join d:m has the lowest cose, we first join d:m
+
+Join a:c with m:d (Cost = 1.7976931348623157E308, card = 0)
+Join a:c with c:m (Cost = 3.14243408E8, card = 278)
+Join c:m with m:d (Cost = 127286.0, card = 1)
+as join c:m with m:d has the lowest cost, we them join c:m
+
+lastly we join a:c
+
+//==========================================
+//          Chosen query plan
+//==========================================                                                      π(a.fname,a.lname),card:3008
+                                                      |
+                                                      ⨝(c.pid=a.id),card:3008
+                                     _________________|__________________
+                                     |                                  |
+                                     ⨝(m.mid=c.mid),card:3008           |
+                 ____________________|____________________              |
+                 |                                       |              |
+                 ⨝(d.id=m.did),card:278                  |              |
+  _______________|________________                       |              |
+  |                              |                       |              |
+  σ(d.lname=Parkinson),card:1    |                       |              |
+  |                              |                       |              |
+  σ(d.fname=Thomas),card:1       |                       |              |
+  |                              |                     scan(Casts c)    |
+scan(Director d)               scan(Movie_Director m)                 scan(Actor a)
+
+a.fname	a.lname
+------------------------
+Michael	Burns
+Patty	Carderelli
+Norman	Fell
+Eric	Foskett
+Reg	Hanson
+Sylvain	Lamontagne
+Christopher B.	MacCabe
+Pantazidis	Panagiotis
+Ray	Roth
+Mark	Ruel
+Frank	Schorpion
+Robert	Scott
+John	Spicer
+Cal	Strathmann
+Martin	Surette
+Bill	Torrie
+Johnny	Usry
+Al	Vandecruys
+Russell J.	Yvan
+Rachel	Bruneau
+Carolyn	Davine
+Deirdre	Fitzsimons
+Nathalie	Gauthier
+Beth	Lachance
+Maxine	Messer
+Suzanne	Verdall
+Dawna	Wightman
+
+ 27 rows.
+
+//==========================================
+// Discuss and justify any changes you made to the API.
+//==========================================
+No API changes are made in Project 3.
+
+//==========================================
+// Describe any missing or incomplete elements of your code.
+//==========================================
+All required methods implementation is complete.
+
+//==========================================
+// Describe how long you spent on the project, and whether there was anything you found particularly difficult or confusing.
+//==========================================
+I spent around 10 hours on this project.
+It took me some time to figure out to order join using dynamic programming.
