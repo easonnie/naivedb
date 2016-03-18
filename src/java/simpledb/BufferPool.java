@@ -2,6 +2,7 @@ package simpledb;
 
 import java.io.*;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * BufferPool manages the reading and writing of pages into memory from
@@ -23,6 +24,8 @@ public class BufferPool {
     int UpperBoundNum;  /** The actual upperbound of page number  */
     Map<PageId, Page> pageMap;
     Map<PageId, Long> lastUsedTimeMap;
+
+    LockManager lockManager;
     /**
      * Creates a BufferPool that caches up to numPages pages.
      *
@@ -33,6 +36,8 @@ public class BufferPool {
         this.UpperBoundNum = numPages;
         pageMap = new HashMap<PageId, Page>();
         lastUsedTimeMap = new HashMap<PageId, Long>();
+
+        this.lockManager = new LockManager();
     }
 
     /**
@@ -53,6 +58,22 @@ public class BufferPool {
     public  Page getPage(TransactionId tid, PageId pid, Permissions perm)
         throws TransactionAbortedException, DbException {
         // some code goes here
+
+        //Lock
+        boolean isLock = lockManager.LockOn(perm, tid, pid);
+        long start = System.currentTimeMillis();
+        while (!isLock) {
+            if (System.currentTimeMillis() - start > 300)
+                throw new TransactionAbortedException();
+            try {
+                Thread.sleep(10);
+                isLock = lockManager.LockOn(perm, tid, pid);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+
         Page page = pageMap.get(pid);
         if (page == null) {
             if (pageMap.size() >= UpperBoundNum) {
@@ -82,6 +103,7 @@ public class BufferPool {
     public  void releasePage(TransactionId tid, PageId pid) {
         // some code goes here
         // not necessary for proj1
+        lockManager.releaseLock(tid, pid);
     }
 
     /**
@@ -92,13 +114,15 @@ public class BufferPool {
     public void transactionComplete(TransactionId tid) throws IOException {
         // some code goes here
         // not necessary for proj1
+        transactionComplete(tid, true);
     }
 
     /** Return true if the specified transaction has a lock on the specified page */
     public boolean holdsLock(TransactionId tid, PageId p) {
         // some code goes here
         // not necessary for proj1
-        return false;
+
+        return lockManager.holdsLock(tid, p);
     }
 
     /**
@@ -112,6 +136,22 @@ public class BufferPool {
         throws IOException {
         // some code goes here
         // not necessary for proj1
+        if (commit) {
+
+            flushPages(tid);
+        } else {
+            //for every page, if it was dirtied by this transaction, remove and reload page from disk
+            for (PageId pid : pageMap.keySet()) {
+                Page p = pageMap.get(pid);
+                if (p.isDirty() != null && tid.equals(p.isDirty())) {
+                    Catalog catalog = Database.getCatalog();
+                    Page newPage = catalog.getDbFile(pid.getTableId()).readPage(pid);
+                    pageMap.put(pid, newPage);
+                }
+            }
+        }
+
+        lockManager.releaseAllLocks(tid);
     }
 
     /**
@@ -298,4 +338,97 @@ public class BufferPool {
 //            return (int) (this.getLastUsedTime() - o.getLastUsedTime());
 //        }
 //    }
+
+    private class LockManager {
+        Map<PageId, ArrayList<TransactionId>> sharedLock;
+        Map<PageId, TransactionId> exclusiveLock;
+
+        public LockManager() {
+            sharedLock = new ConcurrentHashMap<PageId, ArrayList<TransactionId>>();
+            exclusiveLock = new ConcurrentHashMap<PageId, TransactionId>();
+        }
+
+        public synchronized boolean isSharedLockOn(PageId pid, TransactionId tid) {
+            return sharedLock.get(pid) != null && sharedLock.get(pid).contains(tid);
+        }
+
+        public synchronized boolean isExclusiveLockOn(PageId pid, TransactionId tid) {
+            return exclusiveLock.get(pid) != null && exclusiveLock.get(pid).equals(tid);
+        }
+
+        public synchronized boolean LockOn(Permissions perm, TransactionId tid, PageId pid) {
+            if (Permissions.READ_ONLY.equals(perm)) {
+                if (isSharedLockOn(pid, tid) || isExclusiveLockOn(pid, tid)) {
+                    return true;
+                }
+
+                //able to read
+                if (exclusiveLock.get(pid) == null) {
+                    if (sharedLock.get(pid) == null) {
+                        sharedLock.put(pid, new ArrayList<TransactionId>());
+                    }
+
+                    sharedLock.get(pid).add(tid);
+                    return true;
+                }
+            }
+
+            if (Permissions.READ_WRITE.equals(perm)) {
+                //already lock
+                if (isExclusiveLockOn(pid, tid)) {
+                    return true;
+                }
+
+                //able to upgrade lock
+                if (sharedLock.get(pid) != null && sharedLock.get(pid).contains(tid) && sharedLock.get(pid).size() == 1) {
+                    exclusiveLock.put(pid, tid);
+                    sharedLock.get(pid).remove(tid);
+                    return true;
+                }
+
+                //Able to lock
+                if (exclusiveLock.get(pid) == null && (sharedLock.get(pid) == null || sharedLock.get(pid).size() == 0)) {
+                    exclusiveLock.put(pid, tid);
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public synchronized boolean releaseLock(TransactionId tid, PageId pid) {
+            //No lock exist
+            if (exclusiveLock.get(pid) == null || !exclusiveLock.get(pid).equals(tid) && (sharedLock.get(pid) == null || sharedLock.get(pid).size() == 0))
+                return false;
+
+            //Release Shared Lock
+            if (sharedLock.get(pid) != null) {
+                sharedLock.get(pid).remove(tid);
+            }
+
+            //Release exclusive Lock
+            if (exclusiveLock.get(pid).equals(tid)) {
+                exclusiveLock.remove(pid);
+            }
+
+            return true;
+        }
+
+        public boolean holdsLock(TransactionId tid, PageId pid) {
+            boolean shareLocked = sharedLock.get(pid).contains(tid);
+            boolean exclusiveLocked = tid.equals(exclusiveLock.get(pid));
+            return shareLocked || exclusiveLocked;
+        }
+
+        public synchronized void releaseAllLocks(TransactionId tid) {
+            for (PageId pid : sharedLock.keySet()) {
+                if (sharedLock.get(pid).contains(tid))
+                    releaseLock(tid, pid);
+            }
+            for (PageId pid : exclusiveLock.keySet()) {
+                if (exclusiveLock.get(pid).equals(tid))
+                    releaseLock(tid, pid);
+            }
+        }
+    }
 }
