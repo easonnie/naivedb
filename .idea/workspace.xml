@@ -2,53 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d199cfe-b82a-4323-b9df-9bb7d92321e2" name="Default" comment="Complete Project 3 - writeup">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/AggregateTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/AggregateTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/CatalogTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/CatalogTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/FilterTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/FilterTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapFileReadTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/HeapFileReadTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapFileWriteTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/HeapFileWriteTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageIdTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/HeapPageIdTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageReadTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/HeapPageReadTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageWriteTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/HeapPageWriteTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/InsertTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/InsertTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/IntegerAggregatorTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/IntegerAggregatorTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/JoinPredicateTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/JoinPredicateTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/JoinTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/JoinTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/PredicateTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/PredicateTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/RecordIdTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/RecordIdTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/StringAggregatorTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/StringAggregatorTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$CreateHeapFile.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$CreateHeapFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$LockGrabber.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$LockGrabber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$MockScan.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$MockScan.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$SkeletonFile.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$SkeletonFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TestUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleDescTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TupleDescTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/TupleTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/AggregateTest$1.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/AggregateTest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/AggregateTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/AggregateTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/DeleteTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/DeleteTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/EvictionTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/EvictionTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/FilterBase.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/FilterBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/FilterTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/FilterTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/InsertTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/InsertTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/JoinTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/JoinTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/ScanTest$1InstrumentedHeapFile.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/ScanTest$1InstrumentedHeapFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/ScanTest.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/ScanTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/SimpleDbTestBase.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/SimpleDbTestBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/SystemTestUtil.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/systemtest/SystemTestUtil.class" />
-    </list>
-    <list id="67256c22-20ec-4774-9193-7577b12abdcf" name="Rejected commit: Default" comment="Complete Project 3 - writeup">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/answers.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Excercise 6 - Query Plans" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
     </list>
+    <list id="67256c22-20ec-4774-9193-7577b12abdcf" name="Rejected commit: Default" comment="Complete Project 3 - writeup" />
     <ignored path="simpledb.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/src/" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +25,7 @@
     <favorites_list name="simpledb" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -130,10 +91,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="92" />
-    <option name="y" value="-1057" />
+    <option name="x" value="50" />
+    <option name="y" value="23" />
     <option name="width" value="1229" />
-    <option name="height" value="1057" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -160,6 +121,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simpledb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simpledb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="naivedb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -189,27 +171,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpledb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpledb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="naivedb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,124 +189,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/java/simpledb" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/java/simpledb/SeqScan.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/java/simpledb/HashEquiJoin.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/java/simpledb/IntHistogram.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/java/simpledb/OperatorCardinality.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/java/simpledb/QueryPlanVisualizer.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/java/simpledb/StringHistogram.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/test/simpledb/IntHistogramTest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/test/simpledb/JoinOptimizerTest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/test/simpledb/TableStatsTest.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Application.Parser">
     <configuration default="true" type="AntRunConfiguration" factoryName="Ant Target">
@@ -601,6 +444,7 @@
       <workItem from="1454706668409" duration="206000" />
       <workItem from="1454707300679" duration="2853000" />
       <workItem from="1456001835824" duration="24084000" />
+      <workItem from="1458329923604" duration="786000" />
     </task>
     <task id="LOCAL-00001" summary="Complete Project 3 - Exercise 5 - Join Ordering and all tests passed">
       <created>1456097714870</created>
@@ -650,7 +494,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83867000" />
+    <option name="totallyTimeSpent" value="84653000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -662,32 +506,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="92" y="-1057" width="1229" height="1057" extended-state="0" />
+    <frame x="50" y="23" width="1229" height="777" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746115" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32746115" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36642337" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.270073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24936816" sideWeight="0.48690292" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32605532" sideWeight="0.5029486" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32554746" sideWeight="0.4970514" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24936816" sideWeight="0.51309705" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.270073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24936816" sideWeight="0.5065502" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40875912" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746115" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="100" y="100" width="1080" height="600" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="100" width="1080" height="600" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36642337" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40875912" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -972,7 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42922375">
           <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,7 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9544765">
           <caret line="142" column="7" selection-start-line="142" selection-start-column="7" selection-end-line="142" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,7 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.02276176">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -996,10 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
-          <folding>
-            <element signature="e#1008#1009#0" expanded="false" />
-            <element signature="e#1050#1051#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1007,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,10 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23504274">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="e#808#809#0" expanded="false" />
-            <element signature="e#894#895#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,10 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53418803">
           <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="e#2546#2547#0" expanded="false" />
-            <element signature="e#2627#2628#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18803419">
           <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,18 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#307#353#0" expanded="false" />
-            <element signature="e#420#449#0" expanded="false" />
-            <element signature="e#526#556#0" expanded="false" />
-            <element signature="e#1566#1567#0" expanded="false" />
-            <element signature="e#1606#1607#0" expanded="false" />
-            <element signature="e#1870#1871#0" expanded="false" />
-            <element signature="e#1909#1910#0" expanded="false" />
-            <element signature="e#2191#2192#0" expanded="false" />
-            <element signature="e#2238#2239#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1064,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="274" column="34" selection-start-line="274" selection-start-column="28" selection-end-line="274" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,7 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2739726">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1080,7 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3607306">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1096,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.58447486">
           <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1104,7 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,7 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.543379">
           <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,10 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10045662">
           <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
-          <folding>
-            <element signature="e#9529#9546#0" expanded="true" />
-            <element signature="e#9682#9699#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1139,14 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-          <folding>
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#1371#1372#0" expanded="true" />
-            <element signature="e#1402#1403#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1154,7 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1162,9 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0656565">
           <caret line="478" column="9" selection-start-line="478" selection-start-column="9" selection-end-line="478" selection-end-column="9" />
-          <folding>
-            <element signature="e#17921#17930#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1172,7 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8080808">
           <caret line="263" column="37" selection-start-line="263" selection-start-column="37" selection-end-line="263" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
