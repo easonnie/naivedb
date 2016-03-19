@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d199cfe-b82a-4323-b9df-9bb7d92321e2" name="Default" comment="Complete Project 3 - writeup">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/test/simpledb/systemtest/TransactionTest.class" afterPath="$PROJECT_DIR$/bin/test/simpledb/systemtest/TransactionTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/answers.txt" afterPath="$PROJECT_DIR$/answers.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log" afterPath="$PROJECT_DIR$/log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/HeapFile.java" afterPath="$PROJECT_DIR$/src/java/simpledb/HeapFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/simpledb/systemtest/TransactionTest.java" afterPath="$PROJECT_DIR$/test/simpledb/systemtest/TransactionTest.java" />
     </list>
     <list id="67256c22-20ec-4774-9193-7577b12abdcf" name="Rejected commit: Default" comment="Complete Project 3 - writeup" />
     <ignored path="simpledb.iws" />
@@ -51,8 +53,8 @@
       <file leaf-file-name="TransactionTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/simpledb/systemtest/TransactionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47619048">
-              <caret line="225" column="5" selection-start-line="225" selection-start-column="5" selection-end-line="225" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.23809524">
+              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
               <folding>
                 <element signature="e#4897#4904#0" expanded="true" />
                 <element signature="e#9491#9492#0" expanded="true" />
@@ -96,8 +98,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/java/simpledb/BufferPool.java" />
-        <option value="$PROJECT_DIR$/test/simpledb/systemtest/TransactionTest.java" />
         <option value="$PROJECT_DIR$/src/java/simpledb/HeapFile.java" />
+        <option value="$PROJECT_DIR$/test/simpledb/systemtest/TransactionTest.java" />
       </list>
     </option>
   </component>
@@ -554,7 +556,7 @@
       <created>1458361935379</created>
       <option name="number" value="Default" />
       <updated>1458361935379</updated>
-      <workItem from="1458361937089" duration="6866000" />
+      <workItem from="1458361937089" duration="7208000" />
     </task>
     <servers />
   </component>
@@ -591,7 +593,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6922000" />
+    <option name="totallyTimeSpent" value="7264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="23" width="1229" height="777" extended-state="6" />
@@ -1046,8 +1048,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/simpledb/systemtest/TransactionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47619048">
-          <caret line="225" column="5" selection-start-line="225" selection-start-column="5" selection-end-line="225" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.23809524">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
           <folding>
             <element signature="e#4897#4904#0" expanded="true" />
             <element signature="e#9491#9492#0" expanded="true" />
