@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
  */
 public class TransactionTest extends SimpleDbTestBase {
     // Wait up to 10 minutes for the test to complete
-    private static final int TIMEOUT_MILLIS = 20 * 60 * 1000;
+    private static final int TIMEOUT_MILLIS = 10 * 60 * 1000;
 
     private void validateTransactions(int threads)
             throws DbException, TransactionAbortedException, IOException {
