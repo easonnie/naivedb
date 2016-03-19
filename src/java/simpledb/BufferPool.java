@@ -62,9 +62,10 @@ public class BufferPool {
         //Lock
 //         @TODO transacitons waiting for locks are not queued?
         boolean isLock = lockManager.LockOn(perm, tid, pid);
+        //System.out.println(isLock);
         long start = System.currentTimeMillis();
         while (!isLock) {
-            if (System.currentTimeMillis() - start > 300)
+            if (System.currentTimeMillis() - start > 1000)
                 throw new TransactionAbortedException();
             try {
                 Thread.sleep(10);
@@ -404,8 +405,8 @@ public class BufferPool {
 
         public synchronized boolean releaseLock(TransactionId tid, PageId pid) {
             //No lock exist
-            if (exclusiveLock.get(pid) == null || !exclusiveLock.get(pid).equals(tid) && (sharedLock.get(pid) == null || sharedLock.get(pid).size() == 0))
-                return false;
+            //if (exclusiveLock.get(pid) == null && sharedLock.get(pid) == null && sharedLock.get(pid).size() == 0)
+            //    return false;
 
             //Release Shared Lock
             if (sharedLock.get(pid) != null) {
@@ -413,7 +414,7 @@ public class BufferPool {
             }
 
             //Release exclusive Lock
-            if (exclusiveLock.get(pid).equals(tid)) {
+            if (exclusiveLock.get(pid) != null && exclusiveLock.get(pid).equals(tid)) {
                 exclusiveLock.remove(pid);
             }
 
